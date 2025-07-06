@@ -68,7 +68,7 @@ class MyPrintModule : Module() {
         if (!usbManager.hasPermission(device)) {
           android.util.Log.d("MyPrintModule", "Requesting permission for device: ${device.deviceName}")
           usbManager.requestPermission(device, permissionIntent)
-          continue // Skip for now, will be available after permission is granted
+          continue
         }
         val info = mutableMapOf<String, Any>(
           "deviceId" to device.deviceId,

@@ -1,5 +1,5 @@
 {
-  "name": "@sims/expo-pos-printer",
+  "name": "expo-pos-printer",
   "version": "0.1.0",
   "description": "A React Native Expo module for printing receipts using ESC/POS commands on Android devices with USB thermal printers",
   "keywords": [
