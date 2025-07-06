@@ -1,0 +1,2 @@
+include ':my-print'
+project(':my-print').projectDir = new File(rootProject.projectDir, '../../my-print/android') 

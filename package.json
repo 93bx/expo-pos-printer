@@ -1,0 +1,67 @@
+{
+  "name": "@sims/expo-pos-printer",
+  "version": "0.1.0",
+  "description": "A React Native Expo module for printing receipts using ESC/POS commands on Android devices with USB thermal printers",
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-pos-printer",
+    "pos-printer",
+    "thermal-printer",
+    "esc-pos",
+    "usb-printer",
+    "receipt-printer",
+    "android",
+    "typescript"
+  ],
+  "homepage": "https://github.com/93bx/expo-pos-printer#readme",
+  "bugs": {
+    "url": "https://github.com/93bx/expo-pos-printer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/93bx/expo-pos-printer.git"
+  },
+  "license": "MIT",
+  "author": "93bx <mo39bb@gmail.com> (https://github.com/93bx)",
+  "type": "commonjs",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "src",
+    "android/src",
+    "android/build.gradle",
+    "expo-module.config.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bash node_modules/expo-module-scripts/bin/expo-module-build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepublishOnly": "tsc",
+    "expo-module": "expo-module",
+    "open:ios": "xed example/ios",
+    "open:android": "open -a \"Android Studio\" example/android",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "expo": "~53.0.17",
+    "react": "19.0.0",
+    "react-native": "0.79.5"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.0",
+    "expo-module-scripts": "^4.1.6",
+    "expo": "~53.0.0",
+    "react-native": "0.79.1"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
